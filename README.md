@@ -9,7 +9,7 @@ Brain tumor detection system built using Convolutional Neural Networks (CNNs) an
 - Supports image uploads in `.jpg`, `.jpeg`, and `.png` format
 - Simple and lightweight architecture ideal for beginners
 
-🚀 Getting Started
+# 🚀 Getting Started
 1. Create a Virtual Environment
     python -m venv venv
     Activate the environment:
@@ -43,11 +43,11 @@ Brain tumor detection system built using Convolutional Neural Networks (CNNs) an
 Upload a brain MRI image (.jpg, .jpeg, or .png) to get a prediction.
 
 
-📚 Dataset Used
+# 📚 Dataset Used
   Kaggle Brain Tumor Classification Dataset
     https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
- ⚠️ Disclaimer
+# ⚠️ Disclaimer
     This project is intended **for educational and research purposes only**.
         - The predictions made by the model are based on a dataset of MRI images and may not generalize to real-world clinical cases.
         - This application **is not a substitute for professional medical advice, diagnosis, or treatment**.
