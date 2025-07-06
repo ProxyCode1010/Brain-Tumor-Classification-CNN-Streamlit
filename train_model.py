@@ -10,7 +10,7 @@ train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
 
 # Step 2: Load training data (80%)
 train_data = train_datagen.flow_from_directory(
-    'Training',  # ✅ folder name changed from 'dataset' to 'Training'
+    'Training',  # ✅ folder name changed from either training to dataset/ testing to dataset
     target_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
     class_mode='categorical',   # ✅ changed from 'binary'
