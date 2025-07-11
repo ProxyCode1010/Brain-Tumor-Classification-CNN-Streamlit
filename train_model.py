@@ -2,11 +2,12 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 
+#defines variable which is going to used on later
 IMG_SIZE = (150, 150)
 BATCH_SIZE = 16
 
 # Step 1: Setup data generator with validation split
-train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
+train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2) #in validation_split we mention 20 percent of validation and 80 percent of training 
 
 # Step 2: Load training data (80%)
 train_data = train_datagen.flow_from_directory(
@@ -14,7 +15,7 @@ train_data = train_datagen.flow_from_directory(
     target_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
     class_mode='categorical',   # ✅ changed from 'binary'
-    subset='training'
+    subset='training'  #subset is only thing that makes it differ from validation 
 )
 
 # Step 3: Load validation data (20%)
