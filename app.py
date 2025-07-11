@@ -16,7 +16,7 @@ if uploaded_file is not None:
     img = Image.open(uploaded_file)
     st.image(img, caption="Uploaded Image", use_container_width=True)
 
-    img = img.convert("RGB")  # 🔧 Fix grayscale error
+    img = img.convert("RGB")  
     img = img.resize((150, 150))
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)
